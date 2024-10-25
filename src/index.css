@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  min-height: 100vh;
+}
+
+.bg-main{
+  @apply bg-[#121212]
+}
+
+.text-main{
+  @apply text-[#252525]
+}
+.bg-btn-main{
+  @apply bg-[#e0fd60]
+}
