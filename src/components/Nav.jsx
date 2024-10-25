@@ -9,7 +9,7 @@ function Nav() {
   
        <>
         
-        <Link to={"/"} className='fixed block z-[100] top-5 left-14'><img src={lightLogo} alt='icon' className='h-24' /></Link>
+        <Link to={"/home"} className='fixed block z-[100] top-5 left-14'><img src={lightLogo} alt='icon' className='h-24' /></Link>
       
       <div className='z-[100] fixed top-5 right-14 flex gap-2 items-center h-24 '>
        <h2 className=' text-white text-xl'>{exist ? "Exit" : "Menu"}</h2>
