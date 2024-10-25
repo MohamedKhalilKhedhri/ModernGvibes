@@ -56,7 +56,7 @@ const Trail = ({
           ` scale(1)`,
         ],
       },
-      { type: "spring", damping: 15, stiffness: 200 }
+     { duration: .6, ease: "circIn"}
     );
 
     animate(
