@@ -18,7 +18,7 @@ function App() {
     <>
             <Nav />
             <Routes>
-                <Route path='/' element={<Suspense fallback={<div>loading...</div>}><LazyHome/>   </Suspense>} />
+                <Route path='/home' element={<Suspense fallback={<div>loading...</div>}><LazyHome/>   </Suspense>} />
                 <Route path='/couples' element={<Suspense fallback={<div>loading...</div>}><LazyCouples/>   </Suspense>} />
                 <Route path='/fashion' element={<Suspense fallback={<div>loading...</div>}> <LazyFashion/>  </Suspense>} />
                 <Route path='/commercials' element={<Suspense fallback={<div>loading...</div>}> <LazyCommercials/>  </Suspense>} />
