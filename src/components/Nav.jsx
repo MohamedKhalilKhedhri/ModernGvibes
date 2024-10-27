@@ -9,7 +9,7 @@ function Nav() {
   
        <>
         
-        <Link to={"/home"} className='fixed block z-[100] top-5 left-14'><img src={lightLogo} alt='icon' className='h-24' /></Link>
+        <Link to={"/"} className='fixed block z-[100] top-5 left-14'><img src={lightLogo} alt='icon' className='h-24' /></Link>
       
       <div className='z-[100] fixed top-5 right-14 flex gap-2 items-center h-24 '>
        <h2 className=' text-white text-xl'>{exist ? "Exit" : "Menu"}</h2>
@@ -26,21 +26,12 @@ function Nav() {
             <motion.div initial={{scaleY:0}} animate={{scaleY:1 , transition: { duration: 0.5, ease: "circOut" } }} exit={{scaleY:0 , transition: {delay:0.9, duration: 0.5, ease: "circIn" } }}  className="z-[90] fixed top-0 left-0 bg-[#1f1f1f] h-screen w-full flex flex-col items-center justify-center" style={{originY:1}}>
             
             <ul  className='grid  gap-1  text-white text-5xl place-items-center max-w-[500px]'>
-<<<<<<< HEAD
                 <li className=' overflow-hidden'><motion.div initial={{y:"100%", rotate:"6deg"}} whileInView={{y:0,rotate:"0deg"}}  exit={{y:"180%",rotate:"6deg"}} className='p-3' transition={{ delay:0, duration:0.5, ease:'circIn'}}><Link to={"/ModernGvibes/"}  onClick={()=>{setExist(false)}}  className='block'>Home</Link></motion.div></li>
                 <li className=' overflow-hidden'><motion.div initial={{y:"100%", rotate:"6deg"}} whileInView={{y:0,rotate:"0deg"}}  exit={{y:"180%",rotate:"6deg"}} className='p-3' transition={{ delay:0.05, duration:0.5, ease:'circIn'}}><Link onClick={()=>{setExist(false)}} to={"/ModernGvibes/couples"} className=' block'>Couples</Link></motion.div></li>
                 <li className=' overflow-hidden'><motion.div initial={{y:"100%", rotate:"6deg"}} whileInView={{y:0,rotate:"0deg"}}  exit={{y:"180%",rotate:"6deg"}} className='p-3' transition={{ delay:0.1, duration:0.5, ease:'circIn'}}><Link  onClick={()=>{setExist(false)}} to={"/ModernGvibes/fashion"} className=' block'>Fashion</Link></motion.div></li>
                 <li className=' overflow-hidden'><motion.div initial={{y:"100%", rotate:"6deg"}} whileInView={{y:0,rotate:"0deg"}}  exit={{y:"180%",rotate:"6deg"}} className='p-3' transition={{ delay:0.15, duration:0.5, ease:'circIn'}}><Link  onClick={()=>{setExist(false)}} to={"/ModernGvibes/commercials"} className=' block'>Commercials </Link></motion.div></li>
                 <li className=' overflow-hidden'><motion.div initial={{y:"100%", rotate:"6deg"}} whileInView={{y:0,rotate:"0deg"}}  exit={{y:"180%",rotate:"6deg"}} className='p-3' transition={{ delay:0.25, duration:0.5, ease:'circIn'}}><Link onClick={()=>{setExist(false)}} to={"/ModernGvibes/products"} className=' block'>Products</Link></motion.div></li>
                 <li className=' overflow-hidden'><motion.div initial={{y:"100%", rotate:"6deg"}} whileInView={{y:0,rotate:"0deg"}}  exit={{y:"180%",rotate:"6deg"}} className='p-3' transition={{ delay:0.3, duration:0.5, ease:'circIn'}}><Link onClick={()=>{setExist(false)}} to={"/ModernGvibes/contact"} className=' block'>ContactUs </Link></motion.div></li>
-=======
-                <li className=' overflow-hidden'><motion.div initial={{y:"100%", rotate:"6deg"}} whileInView={{y:0,rotate:"0deg"}}  exit={{y:"180%",rotate:"6deg"}} className='p-3' transition={{ delay:0, duration:0.5, ease:'circIn'}}><Link to={"/home"}  onClick={()=>{setExist(false)}}  className='block'>Home</Link></motion.div></li>
-                <li className=' overflow-hidden'><motion.div initial={{y:"100%", rotate:"6deg"}} whileInView={{y:0,rotate:"0deg"}}  exit={{y:"180%",rotate:"6deg"}} className='p-3' transition={{ delay:0.05, duration:0.5, ease:'circIn'}}><Link onClick={()=>{setExist(false)}} to={"/couples"} className=' block'>Couples</Link></motion.div></li>
-                <li className=' overflow-hidden'><motion.div initial={{y:"100%", rotate:"6deg"}} whileInView={{y:0,rotate:"0deg"}}  exit={{y:"180%",rotate:"6deg"}} className='p-3' transition={{ delay:0.1, duration:0.5, ease:'circIn'}}><Link  onClick={()=>{setExist(false)}} to={"/fashion"} className=' block'>Fashion</Link></motion.div></li>
-                <li className=' overflow-hidden'><motion.div initial={{y:"100%", rotate:"6deg"}} whileInView={{y:0,rotate:"0deg"}}  exit={{y:"180%",rotate:"6deg"}} className='p-3' transition={{ delay:0.15, duration:0.5, ease:'circIn'}}><Link  onClick={()=>{setExist(false)}} to={"/commercials"} className=' block'>Commercials </Link></motion.div></li>
-                <li className=' overflow-hidden'><motion.div initial={{y:"100%", rotate:"6deg"}} whileInView={{y:0,rotate:"0deg"}}  exit={{y:"180%",rotate:"6deg"}} className='p-3' transition={{ delay:0.25, duration:0.5, ease:'circIn'}}><Link onClick={()=>{setExist(false)}} to={"/products"} className=' block'>Products</Link></motion.div></li>
-                <li className=' overflow-hidden'><motion.div initial={{y:"100%", rotate:"6deg"}} whileInView={{y:0,rotate:"0deg"}}  exit={{y:"180%",rotate:"6deg"}} className='p-3' transition={{ delay:0.3, duration:0.5, ease:'circIn'}}><Link onClick={()=>{setExist(false)}} to={"/contact"} className=' block'>ContactUs </Link></motion.div></li>
->>>>>>> c6eaba12d539acc181550dad74ed6bf03b1b3438
              </ul>
             </motion.div>
         )}
