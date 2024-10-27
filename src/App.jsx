@@ -18,15 +18,15 @@ function App() {
     <>
             <Nav />
             <Routes>
-                <Route path='/' element={<Suspense fallback={<div>loading...</div>}><LazyHome/>   </Suspense>} />
-                <Route path='/couples' element={<Suspense fallback={<div>loading...</div>}><LazyCouples/>   </Suspense>} />
-                <Route path='/fashion' element={<Suspense fallback={<div>loading...</div>}> <LazyFashion/>  </Suspense>} />
-                <Route path='/commercials' element={<Suspense fallback={<div>loading...</div>}> <LazyCommercials/>  </Suspense>} />
-                <Route path='/products' element={<Suspense fallback={<div>loading...</div>}><LazyProducts/>   </Suspense>} />
-                <Route path='/contact' element={<Suspense fallback={<div>loading...</div>}><LazyContact/>   </Suspense>} />
+                <Route path='firstDashboard/' element={<Suspense fallback={<div>loading...</div>}><LazyHome/>   </Suspense>} />
+                <Route path='/firstDashboard/couples' element={<Suspense fallback={<div>loading...</div>}><LazyCouples/>   </Suspense>} />
+                <Route path='/firstDashboard/fashion' element={<Suspense fallback={<div>loading...</div>}> <LazyFashion/>  </Suspense>} />
+                <Route path='/firstDashboard/commercials' element={<Suspense fallback={<div>loading...</div>}> <LazyCommercials/>  </Suspense>} />
+                <Route path='/firstDashboard/products' element={<Suspense fallback={<div>loading...</div>}><LazyProducts/>   </Suspense>} />
+                <Route path='/firstDashboard/contact' element={<Suspense fallback={<div>loading...</div>}><LazyContact/>   </Suspense>} />
             </Routes>
-<div className='h-[300vh]'></div>
-       
+
+     
     </>
   )
 }

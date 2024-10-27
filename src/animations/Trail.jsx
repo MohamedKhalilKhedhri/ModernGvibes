@@ -55,8 +55,10 @@ const Trail = ({
           ` scale(0.5)`,
           ` scale(1)`,
         ],
+        x: lastRenderPosition.current.x,
+        y: lastRenderPosition.current.y,
       },
-      { type: "spring", damping: 15, stiffness: 200 }
+      { type: "spring",  damping: 15, stiffness: 200 }
     );
 
     animate(
@@ -65,7 +67,7 @@ const Trail = ({
         opacity: [1, 0],
         
       },
-      { ease: "linear", duration: 0.5, delay: 1 }
+      { ease: "linear", duration: 0.5, delay: 1.5 }
     );
 
     imageRenderCount.current = imageRenderCount.current + 1;
@@ -85,6 +87,7 @@ const Trail = ({
           alt={`Mouse move image ${index}`}
           key={index}
           data-mouse-move-index={index}
+          
         />
       ))}
     </div>
