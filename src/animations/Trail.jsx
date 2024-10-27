@@ -58,7 +58,11 @@ const Trail = ({
         x: lastRenderPosition.current.x,
         y: lastRenderPosition.current.y,
       },
+<<<<<<< HEAD
       { type: "spring",  damping: 15, stiffness: 200 }
+=======
+     { duration: .6, ease: "circIn"}
+>>>>>>> c6eaba12d539acc181550dad74ed6bf03b1b3438
     );
 
     animate(
