@@ -25,3 +25,7 @@ body{
 .bg-btn-main{
   @apply bg-[#e0fd60]
 }
+
+.transition-height {
+  transition: height 0.3s ease;
+}

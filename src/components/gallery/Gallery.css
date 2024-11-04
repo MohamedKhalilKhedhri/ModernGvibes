@@ -16,6 +16,10 @@
 }
 
 
+.infinitS{
+  text-align: center;
+}
+
 .pop {
   position: relative;
   z-index: 10000;

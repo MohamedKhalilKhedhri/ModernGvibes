@@ -20,9 +20,9 @@ function Couples() {
   return (
     <>
        <div className='mt-28 p-6 flex flex-col items-center justify-center gap-4'>
-            <h2 className='text-5xl text-white text-center'>Couples.</h2>
+            <h2 className='text-xl md:text-2xl lg:text-4xl text-white text-center'>Couples.</h2>
             <hr className='w-11 h-[2px] bg-white' />
-            <h3 className='text-3xl text-white text-center'>We capture your precious moments with your loved ones.</h3>
+            <h3 className='lg:text-2xl md:text-xl text-base text-white text-center'>We capture your precious moments with your loved ones.</h3>
        </div>
        <Gallery docs={docs} addMore={Gfetch} category={category} More={allDataFetched} />
     </>
