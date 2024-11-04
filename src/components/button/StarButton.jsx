@@ -3,7 +3,7 @@ import './StarButton.css'
 import { Link } from 'react-router-dom';
 const StarButton = ({children,route}) => {
   return (
-    <Link to={`/${route}`} className='Link text-sm md:text-base lg:text-xl'>
+    <Link to={`/${route}`} className='Link text-sm md:text-base lg:text-xl  py-1 px-5 md:py-2 md:px-6'>
       {children}
       <div className="star-1">
         <svg

@@ -37,7 +37,7 @@ function Modal({ type, source, currentIndex, poster, onNext, onPrevious, close, 
         <motion.div 
             onClick={() => { close(null); }}
             initial="hidden" animate="visible" exit="exit" variants={variants}
-            className='z-[200] fixed top-0 left-0 w-full h-full bg-main overflow-hidden flex items-center justify-center'>
+            className='z-[200]  fixed top-0 left-0 w-full h-full bg-main overflow-hidden flex items-center justify-center'>
             
             <div className='h-full w-full' onClick={handlePrevious} style={{ cursor: currentIndex === 0 ? "default" : "pointer" }} />
             
@@ -51,7 +51,7 @@ function Modal({ type, source, currentIndex, poster, onNext, onPrevious, close, 
                             exit="exit" 
                             variants={mediaVariants} 
                             src={source} 
-                            className={`w-full h-auto md:w-auto shrink-0 transition-height ${isZoomed ? 'md:h-[95vh]' : 'md:h-[70vh]'}`} 
+                            className={`w-full h-auto sm:w-auto shrink-0 transition-height ${isZoomed ? 'sm:h-[95vh]' : 'sm:h-[70vh]'}`} 
                             onClick={(e)=>{e.stopPropagation()}} 
                         />
                     ) : (

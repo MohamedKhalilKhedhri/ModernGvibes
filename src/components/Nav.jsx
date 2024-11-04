@@ -9,9 +9,9 @@ function Nav() {
   
        <>
         
-        <Link to={"/ModernGvibes/"} className='fixed block z-[100] top-5 left-14'><img src={lightLogo} alt='icon' className='h-24' /></Link>
+        <Link to={"/ModernGvibes/"} className='fixed block z-[100] top-2 left-7  sm:top-3 sm:left-9  md:top-4 md:left-11  lg:top-5 lg:left-14'><img src={lightLogo} alt='icon' className='h-24' /></Link>
       
-      <div className='z-[100] fixed top-5 right-14 flex gap-2 items-center h-24 '>
+      <div className='z-[100] fixed top-2 right-7  sm:top-3 sm:right-9  md:top-4 md:right-11  lg:top-5 lg:right-14 flex gap-2 items-center h-24 '>
        <h2 className=' text-white text-xl'>{exist ? "Exit" : "Menu"}</h2>
        <button className='relative size-16 rounded-full bg-white  flex items-center flex-col gap-[3px]   justify-center overflow-hidden hover:bg-gray-200 ' onClick={()=>{setExist(!exist)}}>
          
