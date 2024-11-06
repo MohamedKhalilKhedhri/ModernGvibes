@@ -14,7 +14,7 @@ const LazyAdmin = lazy(() => import("./pages/Admin"));
 
 function App() {
 
-  const navigate = useNavigate(); 
+  
 
   const ProtectedRoute = ({ children }) => {
     if (localStorage.getItem("isLoggedIn")) {
