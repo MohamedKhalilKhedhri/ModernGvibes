@@ -32,6 +32,7 @@ function Nav() {
                 <li className=' overflow-hidden'><motion.div initial={{y:"100%", rotate:"6deg"}} whileInView={{y:0,rotate:"0deg"}}  exit={{y:"180%",rotate:"6deg"}} className='p-3' transition={{ delay:0.15, duration:0.5, ease:'circIn'}}><Link  onClick={()=>{setExist(false)}} to={"/ModernGvibes/commercials"} className=' block'>Commercials </Link></motion.div></li>
                 <li className=' overflow-hidden'><motion.div initial={{y:"100%", rotate:"6deg"}} whileInView={{y:0,rotate:"0deg"}}  exit={{y:"180%",rotate:"6deg"}} className='p-3' transition={{ delay:0.25, duration:0.5, ease:'circIn'}}><Link onClick={()=>{setExist(false)}} to={"/ModernGvibes/products"} className=' block'>Products</Link></motion.div></li>
                 <li className=' overflow-hidden'><motion.div initial={{y:"100%", rotate:"6deg"}} whileInView={{y:0,rotate:"0deg"}}  exit={{y:"180%",rotate:"6deg"}} className='p-3' transition={{ delay:0.3, duration:0.5, ease:'circIn'}}><Link onClick={()=>{setExist(false)}} to={"/ModernGvibes/contact"} className=' block'>ContactUs </Link></motion.div></li>
+                <li className=' overflow-hidden'><motion.div initial={{y:"100%", rotate:"6deg"}} whileInView={{y:0,rotate:"0deg"}}  exit={{y:"180%",rotate:"6deg"}} className='p-3' transition={{ delay:0.3, duration:0.5, ease:'circIn'}}><Link onClick={()=>{setExist(false)}} to={"/ModernGvibes/gvibesAdminPanelAuthentication"} className=' block'>Login </Link></motion.div></li>
              </ul>
             </motion.div>
         )}

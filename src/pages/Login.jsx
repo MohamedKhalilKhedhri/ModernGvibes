@@ -3,7 +3,7 @@ import InputComponent from '../components/InputComponent'
 import { app } from '../Config/Firebase'
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from 'react-router-dom';
-const {VITE_ADMIN_KEY} = import.meta.env
+
 function Login() {
 
     const logos ={
@@ -22,9 +22,6 @@ function Login() {
         signInWithEmailAndPassword(auth, email, password)
           .then((userCredential) => {
             setMessage({success:true,message:"Logged In successfully"});
-            if(userCredential.user.uid === VITE_ADMIN_KEY){
-                console.log("hello my admin")
-            }
            
             setTimeout(() => {
                 navigate("/ModernGvibes/gvibesAdminPanel")
