@@ -38,7 +38,7 @@ function Gallery({docs,addMore,More,category}) {
               document.body.style.overflowY ="hidden";
             }
       },[modal])
-      console.log("parent rendred ")
+    
   return (
     <>
       <InfiniteScroll
@@ -67,20 +67,17 @@ function Gallery({docs,addMore,More,category}) {
                           else{
                             return (
                               <div className='bg-slate-500' key={i}>
-                              <picture className="" >
-                                    <source media="(max-width: 600px)" srcSet={doc.resources.small} />
-                                    <source media="(max-width: 768px)" srcSet={doc.resources.medium} />
-                                    <source media="(max-width: 1024px)" srcSet={doc.resources.large} />
+                              
                                     <img
                                         role="presentation"
-                                        src={doc.resources.large} // Fallback image
+                                        src={doc.resources.image} // Fallback image
                                         alt={`media n°${i}`}
                                         className="media "
                                         loading='lazy'
                                         onClick={()=>{handleClick(i)}} 
                                     
                                     />
-                                </picture>
+                              
                               </div>
                                 
                             )
@@ -93,7 +90,7 @@ function Gallery({docs,addMore,More,category}) {
             {modal !== null && (
                   <Modal 
                       type={docs[modal].mediaType} 
-                      source={docs[modal].mediaType === "img" ? docs[modal].resources.large : docs[modal].resources.video} 
+                      source={docs[modal].mediaType === "img" ? docs[modal].resources.image : docs[modal].resources.video} 
                       currentIndex={modal} 
                       onNext={handleNext} 
                       onPrevious={handlePrevious}

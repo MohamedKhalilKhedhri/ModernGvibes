@@ -23,13 +23,11 @@ function Modal({ type, source, currentIndex, poster, onNext, onPrevious, close, 
 
     const handleNext = (e) => {
         onNext();
-        setIsZoomed(false); // Reset zoom on next
         e.stopPropagation();
     };
 
     const handlePrevious = (e) => {
         onPrevious();
-        setIsZoomed(false); // Reset zoom on previous
         e.stopPropagation();
     };
 
@@ -62,7 +60,7 @@ function Modal({ type, source, currentIndex, poster, onNext, onPrevious, close, 
                             exit="exit" 
                             variants={mediaVariants} 
                             src={source} 
-                            className={`md:w-auto shrink-0 ${isZoomed ? 'md:h-[95vh]' : 'md:h-[70vh]'}`} 
+                            className={`w-full h-auto sm:w-auto shrink-0 transition-height ${isZoomed ? 'sm:h-[95vh]' : 'sm:h-[70vh]'}`} 
                             controls 
                             poster={poster} 
                             onClick={(e)=>{e.stopPropagation()}} 
@@ -85,7 +83,7 @@ function Modal({ type, source, currentIndex, poster, onNext, onPrevious, close, 
                 </svg>
             </button>
             
-            <button title='zoom' onClick={handleZoom} className={`absolute top-2 right-20 p-2 rounded-md bg-white/20 hover:bg-white/10 transition-all md:block hidden`}>
+            <button title='zoom' onClick={handleZoom} className={`absolute top-2 right-20 p-2 rounded-md bg-white/20 hover:bg-white/10 transition-all sm:block hidden`}>
                {isZoomed ? (
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  className='sm:size-8 size-6 fill-white'><path d="M160 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 64-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0c17.7 0 32-14.3 32-32l0-96zM32 320c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0 0 64c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96c0-17.7-14.3-32-32-32l-96 0zM352 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 96c0 17.7 14.3 32 32 32l96 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0 0-64zM320 320c-17.7 0-32 14.3-32 32l0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-64 64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-96 0z"/></svg>
                 ):(
